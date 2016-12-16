@@ -47,6 +47,12 @@
 				<td>author</td>
 			</tr> -->
 			<tr>
+				<td>15/11/2016</td>
+				<td><a href="#nardoznov16">Nardoz November 2016</a></td>
+				<td>Videojuego de 13kilobytes en JavaScript</td>
+				<td>Giovanny Beltran</td>
+			</tr>
+			<tr>
 				<td>10/10/2016</td>
 				<td><a href="#brisjsoct16">BrisJS October 2016</a></td>
 				<td>JS13K</td>
@@ -98,6 +104,19 @@
 		<li><strong>Resources</strong>: resources</li>
 		<li><strong>Description</strong>: description</li>
 	</ul> -->
+
+	<h3 id="nardoznov16">[15/11/2016] <a href="https://www.meetup.com/Nardoz/events/235499428/">Nardoz November 2016</a></h3>
+	<img class="miniature" src="photos/nardoznov16.jpg" alt="Giovanny Beltran at nardoz November 2016" />
+	<ul>
+		<li><strong>Title</strong>: Videojuego de 13kilobytes en JavaScript</li>
+		<li><strong>Author</strong>: <a href="https://twitter.com/agar3s">Giovanny Beltran</a></li>
+		<li><strong>City, country</strong>: Buenos Aires, Argentina</li>
+		<li><strong>Venue</strong>: Medallia Argentina</li>
+		<li><strong>Type</strong>: meetup talk</li>
+		<li><strong>Language</strong>: Spanish</li>
+		<li><strong>Resources</strong>: <a href="https://www.youtube.com/watch?v=4UjZLuu0sX4">video</a></li>
+		<li><strong>Description</strong>: Meetup Nardoz con tres charlas super interesantes, hablando de experiencias con distintas tecnologías.</li>
+	</ul>
 
 	<h3 id="brisjsoct16">[10/10/2016] <a href="https://www.meetup.com/BrisJS/events/226293188/">BrisJS October 2016</a></h3>
 	<img class="miniature" src="photos/brisjs16.jpg" alt="Ash, Glen and Kory at BrisJS October 2016" />
@@ -189,6 +208,7 @@
 	var map = L.map('map').setView([20, 20], 2);
 	var redIcon = L.icon({iconUrl:'leaflet/marker-icon.png',shadowUrl:'leaflet/marker-shadow.png',iconAnchor:[12,41]});
 	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+	L.marker([-34.585885,-58.4388427],{icon:redIcon}).addTo(map).bindPopup('Nardoz November 2016');
 	L.marker([-27.484989,152.992523],{icon:redIcon}).addTo(map).bindPopup('BrisJS October 2016');
 	L.marker([6.2091675,-75.5670608],{icon:redIcon}).addTo(map).bindPopup('JSConf Colombia 2016 talk');
 	L.marker([6.264524,-75.5687377],{icon:redIcon}).addTo(map).bindPopup('JSConf Colombia 2016 workshop');
