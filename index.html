@@ -15,6 +15,7 @@
 	<nav>
 		<a href="http://js13kgames.com">js13kGames</a>
 		<ul>
+			<li><a href="http://2017.js13kgames.com">2017</a></li>
 			<li><a href="http://2016.js13kgames.com">2016</a></li>
 			<li><a href="http://2015.js13kgames.com">2015</a></li>
 			<li><a href="http://2014.js13kgames.com">2014</a></li>
@@ -40,12 +41,12 @@
 			</tr>
 		</thead>
 		<tbody>
-<!-- 			<tr>
-				<td>date</td>
-				<td><a href="#someid">event</a></td>
-				<td>title</td>
-				<td>author</td>
-			</tr> -->
+			<tr>
+				<td>14/08/2017</td>
+				<td><a href="#js13k2017">Js13kGames Launch Party 2017</a></td>
+				<td>Jak zmieścić grę HTML5 w 13 kilobajtach?</td>
+				<td>Andrzej Mazur</td>
+			</tr>
 			<tr>
 				<td>15/11/2016</td>
 				<td><a href="#nardoznov16">Nardoz November 2016</a></td>
@@ -104,6 +105,19 @@
 		<li><strong>Resources</strong>: resources</li>
 		<li><strong>Description</strong>: description</li>
 	</ul> -->
+
+	<h3 id="js13k2017">[14/08/2017] <a href="http://gamedevjs.com/js13k-launch.html">Js13kGames Launch Party 2017</a></h3>
+	<img class="miniature" src="photos/js13klaunch17.jpg" alt="Andrzej Mazur at Js13kGames Launch Party 2017" />
+	<ul>
+		<li><strong>Title</strong>: Jak zmieścić grę HTML5 w 13 kilobajtach?</li>
+		<li><strong>Author</strong>: Andrzej Mazur</li>
+		<li><strong>City, country</strong>: Warsaw, Poland</li>
+		<li><strong>Venue</strong>: Codility HQ</li>
+		<li><strong>Type</strong>: meetup talk</li>
+		<li><strong>Language</strong>: Polish</li>
+		<li><strong>Resources</strong>: <a href="https://www.youtube.com/watch?v=RdOram609vU">video</a></li>
+		<li><strong>Description</strong>: Postanowiliśmy przygotować coś specjalnego - w luźnej atmosferze, z piwem, zimnymi napojami i pizzą będziemy świętować start konkursu js13kGames. Podczas specjalnej edycji meetupu dowiecie się jak wziąć udział w konkursie i co zrobić, żeby wygrać. Poprowadzimy pierwszy w historii spotkań Gamedev.js panel dyskusyjny z uczestnikami i sędziami poprzednich edycji oraz ekspertami z branży, którzy chętnie odpowiedzą na wszystkie Wasze pytania. Po panelu będzie czas na małą zabawę z nagrodami.</li>
+	</ul>
 
 	<h3 id="nardoznov16">[15/11/2016] <a href="https://www.meetup.com/Nardoz/events/235499428/">Nardoz November 2016</a></h3>
 	<img class="miniature" src="photos/nardoznov16.jpg" alt="Giovanny Beltran at nardoz November 2016" />
@@ -199,7 +213,7 @@
 
 <footer>
 	<div>
-		&copy; js13kGames 2012-2016
+		&copy; js13kGames 2012-2017
 		<p>Created and maintained by <a target="_blank" href="http://end3r.com">Andrzej Mazur</a> from <a target="_blank" href="http://enclavegames.com">Enclave Games</a>.</p>
 	</div>
 </footer>
@@ -208,6 +222,7 @@
 	var map = L.map('map').setView([20, 20], 2);
 	var redIcon = L.icon({iconUrl:'leaflet/marker-icon.png',shadowUrl:'leaflet/marker-shadow.png',iconAnchor:[12,41]});
 	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+	L.marker([52.2426949,21.0241913],{icon:redIcon}).addTo(map).bindPopup('Js13kGames Launch Party 2017');
 	L.marker([-34.585885,-58.4388427],{icon:redIcon}).addTo(map).bindPopup('Nardoz November 2016');
 	L.marker([-27.484989,152.992523],{icon:redIcon}).addTo(map).bindPopup('BrisJS October 2016');
 	L.marker([6.2091675,-75.5670608],{icon:redIcon}).addTo(map).bindPopup('JSConf Colombia 2016 talk');
