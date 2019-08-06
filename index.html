@@ -15,6 +15,8 @@
 	<nav>
 		<a href="http://js13kgames.com">js13kGames</a>
 		<ul>
+			<li><a href="http://2019.js13kgames.com">2019</a></li>
+			<li><a href="http://2018.js13kgames.com">2018</a></li>
 			<li><a href="http://2017.js13kgames.com">2017</a></li>
 			<li><a href="http://2016.js13kgames.com">2016</a></li>
 			<li><a href="http://2015.js13kgames.com">2015</a></li>
@@ -41,6 +43,24 @@
 			</tr>
 		</thead>
 		<tbody>
+			<tr>
+				<td>17/08/2019</td>
+				<td><a href="#js13khackday2019">Js13kGames hackday 2019</a></td>
+				<td>~</td>
+				<td>Andrzej Mazur</td>
+			</tr>
+			<tr>
+				<td>13/08/2019</td>
+				<td><a href="#js13kjuegos2019">JS13K Videojuegos en JavaScript 2019</a></td>
+				<td>~</td>
+				<td>Giovanny Beltran</td>
+			</tr>
+			<tr>
+				<td>13/08/2018</td>
+				<td><a href="#js13k2018">Js13kGames Launch Party 2018</a></td>
+				<td>Building games in 13 kilobytes</td>
+				<td>Andrzej Mazur</td>
+			</tr>
 			<tr>
 				<td>14/08/2017</td>
 				<td><a href="#js13k2017">Js13kGames Launch Party 2017</a></td>
@@ -105,6 +125,45 @@
 		<li><strong>Resources</strong>: resources</li>
 		<li><strong>Description</strong>: description</li>
 	</ul> -->
+
+	<h3 id="js13khackday2019">[17/08/2019] <a href="https://medium.com/js13kgames/js13kgames-2019-hackday-in-berlin-b502cb2c3f8c">Js13kGames hackday 2019</a></h3>
+	<img class="miniature" src="photos/js13khackday19.jpg" alt="Js13kGames hackday 2019" />
+	<ul>
+		<li><strong>Title</strong>: ~</li>
+		<li><strong>Author</strong>: Andrzej Mazur</li>
+		<li><strong>City, country</strong>: Berlin, Germany</li>
+		<li><strong>Venue</strong>: GameOn Berlin</li>
+		<li><strong>Type</strong>: workshop talk</li>
+		<li><strong>Language</strong>: English</li>
+		<li><strong>Resources</strong>: ~</li>
+		<li><strong>Description</strong>: This year we’re going to have something similar to last year, but went for a more convenient day - Saturday. We will all meet in the awesome GameOn Berlin venue to kickstart 2019’s edition of the competition. Thanks to eBay Tech we’ll have plenty of attractions in the form of real arcade machines and various different games. Food and drinks will be provided throughout the whole day (including BBQ!), and all that will be free of charge.</li>
+	</ul>
+
+	<h3 id="js13kjuegos2019">[13/08/2019] <a href="https://www.meetup.com/BogotaJS/events/263752366">JS13K Videojuegos en JavaScript 2019</a></h3>
+	<img class="miniature" src="photos/js13kjuegos19.jpg" alt="JS13K Videojuegos en JavaScript 2019" />
+	<ul>
+		<li><strong>Title</strong>: ~</li>
+		<li><strong>Author</strong>: Giovanny Beltran</li>
+		<li><strong>City, country</strong>: Bogotá, Colombia</li>
+		<li><strong>Venue</strong>: Payu Colombia</li>
+		<li><strong>Type</strong>: meetup talk</li>
+		<li><strong>Language</strong>: Spanish</li>
+		<li><strong>Resources</strong>: <a href="https://ti.to/bogotajs/js13k-javascript-video-game">tickets</a></li>
+		<li><strong>Description</strong>: Este Martes 13 de Agosto de 2019 dara inicio el JS13k una competencia de programación de videojuegos en JavaScript, lo interesante del reto es que los juegos no pueden pesar mas de 13Kilobytes! Durante el meetup haremos una introducción general a la competencia, daremos algunos tips y recomendaciones sobre como iniciar y revisaremos algunos juegos de competencias pasadas.</li>
+	</ul>
+
+	<h3 id="js13k2018">[13/08/2018] <a href="https://medium.com/js13kgames/launch-party-with-ebay-in-berlin-1103f946b05a">Js13kGames Launch Party 2018</a></h3>
+	<img class="miniature" src="photos/js13klaunch18.jpg" alt="Js13kGames Launch Party 2018" />
+	<ul>
+		<li><strong>Title</strong>: Building games in 13 kilobytes</li>
+		<li><strong>Author</strong>: Andrzej Mazur</li>
+		<li><strong>City, country</strong>: Berlin, Germany</li>
+		<li><strong>Venue</strong>: Motor-Talk.de</li>
+		<li><strong>Type</strong>: workshop talk</li>
+		<li><strong>Language</strong>: English</li>
+		<li><strong>Resources</strong>: <a href="https://end3r.com/slides/ebay-js13k18/">slides</a></li>
+		<li><strong>Description</strong>: It will start on Monday, August 13th at 10:00 AM and will last throughout the day till late evening. Instead of a meetup, we will have a warm-up hackathon to create a working prototype in just a few hours.</li>
+	</ul>
 
 	<h3 id="js13k2017">[14/08/2017] <a href="http://gamedevjs.com/js13k-launch.html">Js13kGames Launch Party 2017</a></h3>
 	<img class="miniature" src="photos/js13klaunch17.jpg" alt="Andrzej Mazur at Js13kGames Launch Party 2017" />
@@ -222,6 +281,9 @@
 	var map = L.map('map').setView([20, 20], 2);
 	var redIcon = L.icon({iconUrl:'leaflet/marker-icon.png',shadowUrl:'leaflet/marker-shadow.png',iconAnchor:[12,41]});
 	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+	L.marker([52.53796,13.279751],{icon:redIcon}).addTo(map).bindPopup('Js13kGames hackday 2019');
+	L.marker([4.6837993,-74.0505266],{icon:redIcon}).addTo(map).bindPopup('JS13K Videojuegos en JavaScript 2019');
+	L.marker([52.511781,13.4537083],{icon:redIcon}).addTo(map).bindPopup('Js13kGames Launch Party 2018');
 	L.marker([52.2426949,21.0241913],{icon:redIcon}).addTo(map).bindPopup('Js13kGames Launch Party 2017');
 	L.marker([-34.585885,-58.4388427],{icon:redIcon}).addTo(map).bindPopup('Nardoz November 2016');
 	L.marker([-27.484989,152.992523],{icon:redIcon}).addTo(map).bindPopup('BrisJS October 2016');
